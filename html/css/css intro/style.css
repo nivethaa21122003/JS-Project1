@@ -1,0 +1,90 @@
+div{
+    background-color: lightblue;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+
+/* id selector */
+/* #container{
+    background-color: lightblue;
+}
+#para-1{
+    color: blue;
+}
+#para-2{
+    color: red;
+} */
+
+/* class selector  */
+/* .para-group{
+    color: darkgoldenrod;
+} */
+
+
+/* Text Related Styling */
+
+#para-1{
+    font-family: monospace; /* internal  font family*/
+    font-size: 2rem;
+    color: aqua;
+    font-weight: 800;
+}
+
+#para-2{
+    font-family: "Mozilla Headline", sans-serif; /* external font family*/
+    font-style: italic;
+}
+#para-3{
+    background-color: tomato;
+    text-align: right;
+}
+
+#span{
+    background-color: brown;
+    color: white;
+    font-size: 1rem;
+    text-align: center;  /* it wont work */
+}
+
+#para-5{
+    text-decoration: line-through;
+    text-decoration-color: yellow;
+    text-decoration-thickness: 10px;
+}
+#para-6{
+    text-transform: capitalize;
+    text-indent: 50px;
+}
+h2{
+    text-shadow: 10px 10px 3px gray;
+}
+
+
+
+
+h1{
+    color: brown;
+
+}
+#para{
+    color: aqua;
+}
+.li-group{
+    background-color: aquamarine;
+    color: black;
+    padding: 10px;
+    margin: 2px;
+}

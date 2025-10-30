@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ 
+ <style>
+    nav{
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul{
+        background: #AAFFA9;
+       /* fallback for old browers*/
+        background:webkit- linear-gradient(to right,#11FFBD,#AAFFA9);
+       /*chrome 10-25,safari 5.1-6*/
+       background: linear-gradient(to right,#11FFBD,#AAFFA9);
+       /*W3C,IE 10+*/
+       /*Edge,Firefox 16+,Chrome 26+,Opera 12+,Safari 7+*/
+       
+       
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-radius: 0 25px 0 25px;
+    }
+
+    ul>li{
+        list-style-type: none;
+        margin: 5px 25px;
+    }
+
+
+    ul>li>a{
+        text-decoration: none;
+        font-size: 34px;
+        color:white;
+        font-weight: 600;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    /*table <styling>*/
+        .table-section{
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        table{
+            width: 100%;
+            text-align: center;
+            border: 1px solid rgb(42,42,42);
+            border-collapse: collapse;
+            font-family: monospace;
+        }
+        th,td{
+            border: 1px solid rgb(42,42,42);
+        }
+        th{
+            height: 35px;
+            font-size: 22px;
+            background-color: #11FFBD;
+            color: white;
+            text-transform: uppercase;
+        }
+        td{
+            height: 25px;
+            font-size: 10px;
+            text-transform: lowercase;
+        }
+        tr:nth-child(even){
+            background-color:pink;
+        }
+    </style>    
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Profile</a></li>
+            <li><span style="border-right: 3px solid white;"></span></li>
+            <li><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></li>
+                
+
+               
+            </ul>
+            
+        </nav>
+        </header>
+
+
+        <section class="table-section">
+         <table>
+            <tr>
+                <th>Id</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>DOB</th>
+                <th>Language</th>
+            </tr> 
+            
+            
+            <tr>
+                <th>1.</th>
+                <th>Mohammed</th>
+                <th>Imran</th>
+                <th>12/20</th>
+                <th>Tamil</th>
+            </tr>   
+
+
+            <tr>
+                <th>2.</th>
+                <th>Mohammed</th>
+                <th>Imran</th>
+                <th>12/20</th>
+                <th>Tamil</th>
+            </tr>   
+
+
+            <tr>
+                <th>3.</th>
+                <th>Mohammed</th>
+                <th>Imran</th>
+                <th>12/20</th>
+                <th>Tamil</th>
+            </tr>   
+
+
+
+            <tr>
+                <th>4.</th>
+                <th>Mohammed</th>
+                <th>Imran</th>
+                <th>12/20</th>
+                <th>Tamil</th>
+            </tr>  
+            
+            
+            <tr>
+                <th>5.</th>
+                <th>Mohammed</th>
+                <th>Imran</th>
+                <th>12/20</th>
+                <th>Tamil</th>
+            </tr> 
+          </table>
+         </section>     
+</body>
+</html>

@@ -1,0 +1,158 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rotate{
+    height: 150px;
+    width: 150px;
+    background-color: lightblue;
+}
+
+.rotate: hover{
+transform: rotateX(75deg);
+}
+
+.scale{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(0,52,70);
+}
+
+.scale:hover{
+    transform: scale(1.8,0.8);
+}
+.skew{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(125,130,16);
+}
+.skew:hover{
+    transform: skewY(45deg);
+
+}
+.translate{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(24,1,88);
+    transform: translate(200px);
+}
+
+.trans{
+    background-color: aqua;
+    color: white;
+    font-size: 28px;
+    height: 100px;
+    width: 100px;
+
+
+     /*transition-property: width;*
+     *transition-duration: 2s;*
+     *transition-timing-function: linear;*
+     *transition-delay: 0s;*/
+
+     /*transition: width 2s,height 2s;*/
+     transition: transform 4s;
+}
+
+.trans:hover{
+    /*width: 200px;*/
+    /*height: 200px;*/
+
+    transform: rotate(180deg);
+    border-radius: 10px;
+}
+
+h1{
+    color: red;
+}
+
+h1:hover{
+    color: green;
+    background-color: lightblue;
+    border-left: 5px solid orange;
+}
+
+.anime{
+    height: 80px;
+    width: 120px;
+    background-color: lightblue;
+    position: relative;
+
+    animation-name: style;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+}
+
+@keyframes style{
+    0%{
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25%{
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50%{
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75%{
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100%{
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+body{
+    overflow: hidden;
+}
+
+#truckimg{
+    position: absolute;
+    
+    animation-name: movingTruck;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    animation-iteration-count: iteration;
+    animation-timing-function: ease;
+}
+
+@keyframes movingTruck{
+    0%{
+        top: 0;
+        right: -400px;
+
+    }
+    25%{
+        top: 0;
+        right: 10px;
+    }
+    50%{
+        top: 0;
+        right: 500px;
+    }
+    75%{
+        top: 0;
+        right: 90px;
+    }
+    100%{
+        top: 0px;
+        right: 1450px;
+    }
+}

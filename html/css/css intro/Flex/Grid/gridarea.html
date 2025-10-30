@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .grid-container{
+            height: 100vh;
+            font-size: 24px;
+
+            display: grid;
+            grid-template-areas: 
+            'header header header'
+            'sidebar main main'
+            'footer footer footer';
+            /* row-gap: 3px;
+            column-gap:3px ; */
+            /* gap: 3px; */
+            grid-template-rows: 80px auto 200px;
+            grid-template-columns: 200px auto auto;
+        }
+        .grid-items{
+            padding: 15px;
+        }
+        .item1{
+            grid-area: header;
+            background-color: darkblue;
+            color: white;
+        }
+        .item2{
+            grid-area: sidebar;
+            background-color: lightblue;
+        }
+        .item3{
+            grid-area: main;
+            background-color: lightgray;
+        }
+        .item4{
+            grid-area: footer;
+            background-color: black;
+            color: white;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-items item1">
+            <nav>
+                <div>
+                    Logo
+                </div>
+                <div>
+                    <a href="">Menu-1</a>
+                    <a href="">Menu-2</a>
+                    <a href="">Menu-3</a>
+                    <a href="">Menu-4</a>
+                </div>
+                <div>
+                    <button>Get Started</button>
+                </div>
+            </nav>
+        </div>
+        <div class="grid-items item2">
+            <li>List-1</li>
+            <li>List-2</li>
+            <li>List-3</li>
+            <li>List-4</li>
+            <li>List-5</li>
+            <li>List-6</li>
+            <li>List-7</li>
+        </div>
+        <div class="grid-items item3">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam suscipit quae id quasi explicabo consequuntur fuga accusamus, numquam enim eos, exercitationem laudantium est quod incidunt vitae quibusdam voluptate dicta sint.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam suscipit quae id quasi explicabo consequuntur fuga accusamus, numquam enim eos, exercitationem laudantium est quod incidunt vitae quibusdam voluptate dicta sint.</p>
+        </div>
+        <div class="grid-items item4">
+            <h2 style="text-align: center;">Footer</h2>
+        </div>
+    </div>
+</body>
+</html>

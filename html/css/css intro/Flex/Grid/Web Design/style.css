@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+nav{
+    background-color: lightcoral;
+    color: white;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav > ul {
+    list-style-type: none;
+    display: flex;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    font-size: 22px;
+    color: aliceblue;
+    margin: 0 10px;
+}
+
+button{
+    border: none;
+    padding: 6px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.menu-icon{
+    display: none;
+}
+
+
+
+
+
+/* Responsive Code */
+
+/* small device 0px - 450px */
+@media screen and (width < 450px) {
+    nav{
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    ul{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+}
+
+
+/* Medium Device 450px - 850px */
+@media screen and (width > 450px) and (width < 850px){
+    nav{
+        background-color: white;
+        box-shadow: 1px 1px 2px lightgray;
+        color: blue;
+    }
+    nav > ul{
+        display: none;
+    }
+    nav > ul > li > a{
+        color: blue;
+    }
+    button{
+        border: 2px solid blue;
+        padding: 5px 15px;
+    }
+    .menu-icon{
+        display: block;
+    }
+
+}
+
+/* Large Device 850px - 1200px */
+
+@media screen and (width > 850px) and (width < 1200px) {
+    nav{
+        background-color: rgb(13, 85, 13);
+    }
+    button{
+        background-color: transparent;
+        box-shadow: 1px 1px 2px 1px white;
+        color: white;
+    }
+}
+
+/* Extra Large Device  above 1200px */
+
+@media screen and (width > 1200px) {
+
+    nav{
+        background-color: orange;
+    }
+    
+}

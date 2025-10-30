@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+
+
+.container{
+    height: 500px;
+    width: 100%;
+    background-color: aqua;
+    background-image:url(../garden-flower-close-up-35646.jpg);
+    background:linear-gradient(to bottom,yellow,red);
+    background:radial-gradient(to bottom,blue,green);
+    background:conic-gradient(to bottom,purple,orange);
+
+
+
+
+}
+

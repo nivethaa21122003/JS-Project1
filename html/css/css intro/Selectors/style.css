@@ -1,0 +1,215 @@
+
+
+h1{
+    color: brown;
+
+}
+#para{
+    color: aqua;
+}
+.li-group{
+    background-color: aquamarine;
+    color: black;
+    padding: 10px;
+    margin: 2px;
+
+    *Universal selector *
+    * *{
+        color: purple;
+}*
+
+
+* Group Selector *
+* h1,h2,p{
+    color:crimson;
+}*
+
+
+* Element name selector *
+* h1{
+    color: tomato;
+}*
+
+
+* id selector   *
+* #para{
+    color:aqua;
+}*
+
+
+* class selector *
+* .li-group{
+  background-color:lightblue;
+  color: darkblue;
+  padding: 10px;
+  margin: 2px;  
+}
+.li_one{
+    font-size: 30px;
+}
+.li-two{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+* #spanId{
+    color:green;
+
+}
+.spanClass{
+    color:blue
+}
+
+*div p{
+    color: aqua;
+}
+
+div p 
+{
+    color: beige;
+    background-color: burlywood;
+}
+
+
+* -------------------------------- */
+
+* Combinator Selector */
+
+/* *  Descendant combinator (space) */
+
+div p{ 
+    color:aqua;
+} 
+
+ /* Child combinator (>)  */
+div>p{
+    background-color: rgb(119, 31, 146);
+    width: fit-content;
+} 
+
+ /* Next sibling combinator (+)  */
+ div + p{
+    color: magenta;
+} 
+/* 
+* Subsequent-sibling combinator (~) */
+ div ~ p{
+    background-color: rgb(16, 165, 66);
+    color: darkblue;    
+} 
+
+* -------------------------------- */
+
+* Pseudo-classes Selector  */
+
+* div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+div a:link{
+    color: orange;
+}
+
+div a:active{
+    color: springgreen;
+}
+
+div a:visited{
+    color: black;
+}
+div a:hover{
+    background-color: lightblue;
+    color: darkblue;
+    padding: 4px 15px;
+}
+
+ul li:first-child{
+    color: darkolivegreen;
+}
+
+ul li:last-child{
+    color: rgb(14, 3, 75);
+} *
+
+* ul li:nth-child(Even){
+    color:blueviolet;
+} *
+
+
+
+
+
+* Pseudo Element Selector*/
+
+#before
+h2::before{
+    content:'start:';
+}
+
+h2::after{
+    content:'end:';
+}
+
+.container{
+    height:80vh;
+    background-image: url(../Images/);
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+
+}
+.container::before{
+    content: '';
+    background: linear-gradient(135deg, rgba(175));
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+p::first-letter{
+
+}
+
+p::first-line{
+    background-color: aqua;
+    color: brown;
+}
+
+input::placeholder{
+
+}
+
+
+* Attribute Selector */
+* input[type='text']{
+    width: 500px;
+    border: none;
+    border-bottom: 2px solid green;
+}*/
+
+/*/----------------------------------------------------
+----------------------------------------------
+*/
+
+* Css Colors */
+div h2:nth-child(1){
+    color:blanchedalmond
+}
+div h2:nth-child(2){
+    * color:rgb(65,39,71);*/
+    color:rgba(65,39,71,0.6);
+}
+div h2:nth-child(4){
+    color: #2b014b;
+}
+
+
+
+
+ 
